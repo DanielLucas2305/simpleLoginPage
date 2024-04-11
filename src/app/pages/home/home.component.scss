@@ -1,0 +1,134 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  //   width: 100vw;
+  //   background-color: #3c617e;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+
+    background-color: #acacac;
+
+    .img-back {
+      height: calc(100vh - 4rem);
+      border-radius: 1rem;
+      object-fit: cover;
+      // width: 65%;
+      max-width: 65%;
+      margin-right: 0.5rem;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      border-radius: 1rem;
+      min-height: 100%;
+      width: 37%;
+      padding: 2rem;
+      font-weight: 300;
+
+      background-color: #ffffff;
+
+      .inputs {
+        margin-top: 0.5rem;
+
+        .field {
+          display: flex;
+          flex-direction: column;
+          margin: 0.25rem 0;
+
+          label {
+            padding-left: 0.25rem;
+          }
+
+          input {
+            padding-left: 0.25rem;
+            height: 3rem;
+
+            border: 1px solid #d2d1d1 !important;
+          }
+        }
+
+        .field input {
+          border-radius: 15px;
+          background-color: #fff692;
+          border: none;
+        }
+
+        .button {
+          margin: 1rem 0;
+          padding: 0.5rem 1rem;
+          background-color: #802000;
+          width: 100%;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+          background-color: #da3d09;
+        }
+
+        .forget {
+          display: flex;
+          justify-content: right;
+          margin-bottom: 1rem;
+          width: 100%;
+          a {
+            text-align: left;
+            font-weight: 500;
+            color: #121212;
+          }
+        }
+      }
+
+      .rodape {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+
+        a {
+          font-weight: 400;
+          color: #802000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-image: url("https://images.unsplash.com/photo-1560202212-441ad59100fd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .img-back {
+            display: none;
+            // height: 100%;
+            // width: 100%;
+            // z-index: -1;
+        }
+
+        .text {
+            width: 80% !important;
+            z-index: 1;
+
+            input{
+                height: 7.70%;
+            }
+        }
+    }
+}

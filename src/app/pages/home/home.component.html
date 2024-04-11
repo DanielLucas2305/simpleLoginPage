@@ -1,0 +1,38 @@
+<div class="background">
+  <div class="container">
+    <img
+      src="https://images.unsplash.com/photo-1560202212-441ad59100fd?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="pessoas sorrindo"
+      class="img-back"
+    />
+    <div class="text">
+      <div class="title">
+        <h1>
+          Entrar na <br />
+          Grandih Pizzaria
+        </h1>
+        <p>Acesse e aproveite a melhor pizza</p>
+      </div>
+      <div class="inputs">
+        <form (ngSubmit)="login()">
+          <div class="field">
+            <label>Nome</label>
+            <input type="text" placeholder="Insira seu nome" [(ngModel)]="email" name="email" />
+          </div>
+          <div class="field">
+            <label>Senha</label>
+            <input type="password" placeholder="Digite sua senha" [(ngModel)]="senha" name="senha" />
+          </div>
+          <div class="forget">
+            <a routerLink="/forgetPassword">Esqueceu a senha ?</a>
+          </div>
+          <button type="submit" class="button">Login</button>
+        </form>
+      </div>
+      <div class="rodape">
+        <p class="grey">Novo por aqui ?&nbsp;</p>
+        <a href="/newRegister" class="red">Cadastre-se</a>
+      </div>
+    </div>
+  </div>
+</div>

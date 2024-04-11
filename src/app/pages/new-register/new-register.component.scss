@@ -1,0 +1,43 @@
+/*.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #790000;
+}
+.caixa{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid #0000;
+    background-color: #4a4084;
+}*/
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    // height: 100vh;
+    background-color: #557a89;
+}
+
+.caixa1, .caixa2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid #000000;
+    border-radius: 8px;
+}
+
+.caixa1{
+    background-color: #8f8a32;
+}
+.caixa2{
+    background-color: #628913;
+}
